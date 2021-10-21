@@ -1,16 +1,14 @@
-import { Profile } from '../../profile/entities/profile.entity';
-import { Role } from '../../role/entities/role.entity';
+import { hash } from 'bcryptjs';
 import {
   BeforeInsert,
   BeforeUpdate,
   Column,
   Entity,
   JoinColumn,
-  ManyToOne,
   OneToOne,
   PrimaryGeneratedColumn,
 } from 'typeorm';
-import { hash } from 'bcryptjs';
+import { Profile } from '../../profile/entities/profile.entity';
 
 @Entity('user')
 export class User {
@@ -32,10 +30,10 @@ export class User {
     this.password = await hash(this.password, 10);
   }
 
-  @OneToOne(() => Profile)
+  @OneToOne(() => Profile, { cascade: true })
   @JoinColumn()
   profle: Profile;
 
-  @ManyToOne(() => Role, (role) => role.users)
-  role: Role;
+  @Column({ type: 'simple-array' })
+  roles: string[];
 }

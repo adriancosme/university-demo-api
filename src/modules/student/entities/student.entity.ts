@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
+import { ProgramToStudent } from '../../program-student/entities/program-student.entity';
 
 @Entity('student')
 export class Student {
@@ -10,4 +11,11 @@ export class Student {
 
   @Column()
   lastName: string;
+
+  @OneToMany(
+    () => ProgramToStudent,
+    (programToStudent) => programToStudent.student,
+    { cascade: true },
+  )
+  programToStudent: ProgramToStudent[];
 }

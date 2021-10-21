@@ -6,7 +6,6 @@ import { DatabaseModule } from '../common/database/database.module';
 import { AuthModule } from './auth/auth.module';
 import { ProfileModule } from './profile/profile.module';
 import { ProgramModule } from './program/program.module';
-import { RoleModule } from './role/role.module';
 import { StudentModule } from './student/student.module';
 import { UserModule } from './user/user.module';
 
@@ -16,13 +15,12 @@ import { UserModule } from './user/user.module';
     DatabaseModule,
     UserModule,
     ProfileModule,
-    RoleModule,
     StudentModule,
     ProgramModule,
     AuthModule,
   ],
 })
-export class AppModule { 
+export class AppModule {
   static PORT: number | string;
   static HTTP: string;
   static HOST: string;
