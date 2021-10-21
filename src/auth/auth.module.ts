@@ -1,12 +1,11 @@
 import { Module } from '@nestjs/common';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
-import { Configuration } from '../../common/config/config.keys';
-import { ConfigModule } from '../../common/config/config.module';
-import { ConfigService } from '../../common/config/config.service';
+import { JWT_SECRET } from '../config/constants';
 import { UserModule } from '../user/user.module';
-import { AuthController } from './api/auth.controller';
-import { AuthService } from './api/auth.service';
+import { AuthController } from './auth.controller';
+import { AuthService } from './auth.service';
 import { JwtStrategy } from './strategies/jwt.strategy';
 import { LocalStrategy } from './strategies/local.strategy';
 
@@ -20,7 +19,7 @@ import { LocalStrategy } from './strategies/local.strategy';
       imports: [ConfigModule],
       inject: [ConfigService],
       useFactory: (config: ConfigService) => ({
-        secret: config.get(Configuration.APP_SECRET_KEY),
+        secret: config.get(JWT_SECRET),
         signOptions: { expiresIn: '60m' },
       }),
     }),

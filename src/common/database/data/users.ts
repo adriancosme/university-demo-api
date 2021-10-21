@@ -1,12 +1,12 @@
-import { Profile } from '../../../modules/profile/entities/profile.entity';
-import { User } from '../../../modules/user/entities/user.entity';
+import { Profile } from '../../../profile/entities/profile.entity';
+import { User } from '../../../user/entities/user.entity';
 
 const users: User[] = [
   {
     username: 'jperez',
     password: 'admin',
     roles: ['ADMIN'],
-    profle: {
+    profile: {
       name: 'Juan',
       lastname: 'Perez',
       email: 'jperez@mail.com',
@@ -16,10 +16,16 @@ const users: User[] = [
     username: 'jmarrufo',
     password: 'cashier',
     roles: ['CASHIER'],
-    profle: {
+    profile: {
       name: 'Javier',
       lastname: 'Marrufo',
       email: 'jmarrufo@mail.com',
     } as Profile,
   } as User,
-];
+].map((data) => {
+  const user = new User();
+  Object.assign(user, data);
+  return user;
+});
+
+export default users;

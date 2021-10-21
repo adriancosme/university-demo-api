@@ -1,4 +1,4 @@
-import { Student } from '../../../modules/student/entities/student.entity';
+import { Student } from '../../student/entities/student.entity';
 import {
   Column,
   Entity,

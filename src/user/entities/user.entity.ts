@@ -30,9 +30,9 @@ export class User {
     this.password = await hash(this.password, 10);
   }
 
-  @OneToOne(() => Profile, { cascade: true })
+  @OneToOne(() => Profile, (profile) => profile.user, { cascade: true })
   @JoinColumn()
-  profle: Profile;
+  profile: Profile;
 
   @Column({ type: 'simple-array' })
   roles: string[];

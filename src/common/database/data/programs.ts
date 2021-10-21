@@ -1,4 +1,4 @@
-import { Program } from '../../../modules/program/entities/program.entity';
+import { Program } from '../../../program/entities/program.entity';
 
 const programs: Program[] = [
   { name: 'Primavera' } as Program,

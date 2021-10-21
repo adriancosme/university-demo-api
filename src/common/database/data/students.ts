@@ -1,4 +1,4 @@
-import { Student } from '../../../modules/student/entities/student.entity';
+import { Student } from '../../../student/entities/student.entity';
 
 const students: Student[] = [
   { name: 'Jorge', lastName: 'Puerto' } as Student,
