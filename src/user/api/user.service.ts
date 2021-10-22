@@ -18,6 +18,9 @@ export class UserService {
   }
 
   async getAllUsers() {
-    return this.userRepository.createQueryBuilder().getMany();
+    return this.userRepository
+      .createQueryBuilder('user')
+      .innerJoinAndSelect('user.profile', 'profile')
+      .getMany();
   }
 }

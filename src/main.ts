@@ -20,6 +20,7 @@ async function bootstrap() {
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('docs', app, document);
+  app.enableCors();
   await app.listen(port);
   logger.log(`[ APP] host run in localhost:${port}`);
 }
