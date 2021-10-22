@@ -1,23 +1,23 @@
 {
   "type": "mysql",
   "host": "localhost",
-  "port": 33060,
+  "port": 33061,
   "username": "root",
   "password": "secret",
   "database": "db_demo_dev",
   "entities": [
-    "/home/adriancosme/Projects/nodejs/university-demo-api/dist/**/**/*entity{.ts,.js}"
+    "C:\\Users\\admin\\Projects\\university-test-api\\dist\\**\\**\\*entity{.ts,.js}"
   ],
   "seeds": [
-    "/home/adriancosme/Projects/nodejs/university-demo-api/dist/**/**/**/*.seed{.ts,.js}"
+    "C:\\Users\\admin\\Projects\\university-test-api\\dist\\**\\**\\**\\*.seed{.ts,.js}"
   ],
   "factories": [
-    "/home/adriancosme/Projects/nodejs/university-demo-api/dist/config../**/**/**/*.factory{.ts,.js}"
+    "C:\\Users\\admin\\Projects\\university-test-api\\dist\\config..\\**\\**\\**\\*.factory{.ts,.js}"
   ],
   "autoLoadEntities": true,
   "migrationsRun": true,
   "migrations": [
-    "/home/adriancosme/Projects/nodejs/university-demo-api/dist/migration/**/*{.ts,.js}"
+    "C:\\Users\\admin\\Projects\\university-test-api\\dist\\migration\\**\\*{.ts,.js}"
   ],
   "migrationsTableName": "migrations_typeorm",
   "cli": {

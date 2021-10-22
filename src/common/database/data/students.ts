@@ -10,7 +10,7 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 1 },
-        inscriptionDate: new Date('23/06/2021'),
+        inscriptionDate: new Date('2021-06-23'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -22,7 +22,7 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 2 },
-        inscriptionDate: new Date('23/06/2021'),
+        inscriptionDate: new Date('2021-06-23'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -34,7 +34,7 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 3 },
-        inscriptionDate: new Date('23/06/2021'),
+        inscriptionDate: new Date('2021-06-23'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -46,7 +46,7 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 4 },
-        inscriptionDate: new Date('23/06/2021'),
+        inscriptionDate: new Date('2021-06-23'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -58,7 +58,7 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 5 },
-        inscriptionDate: new Date('27/06/2021'),
+        inscriptionDate: new Date('2021-06-27'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -70,7 +70,7 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 6 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -82,7 +82,7 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 7 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -94,7 +94,7 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 8 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -106,7 +106,7 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 9 },
-        inscriptionDate: new Date('27/06/2021'),
+        inscriptionDate: new Date('2021-06-27'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -118,12 +118,12 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 10 },
-        inscriptionDate: new Date('27/06/2021'),
+        inscriptionDate: new Date('2021-06-27'),
       } as ProgramToStudent,
       {
         program: { id: 2 },
         student: { id: 10 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -135,7 +135,7 @@ const students: Student[] = [
       {
         program: { id: 1 },
         student: { id: 11 },
-        inscriptionDate: new Date('27/06/2021'),
+        inscriptionDate: new Date('2021-06-27'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -147,7 +147,7 @@ const students: Student[] = [
       {
         program: { id: 2 },
         student: { id: 12 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -159,7 +159,7 @@ const students: Student[] = [
       {
         program: { id: 2 },
         student: { id: 13 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -171,7 +171,7 @@ const students: Student[] = [
       {
         program: { id: 2 },
         student: { id: 14 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -183,7 +183,7 @@ const students: Student[] = [
       {
         program: { id: 2 },
         student: { id: 15 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -195,7 +195,7 @@ const students: Student[] = [
       {
         program: { id: 2 },
         student: { id: 16 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -207,7 +207,7 @@ const students: Student[] = [
       {
         program: { id: 2 },
         student: { id: 17 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -219,7 +219,7 @@ const students: Student[] = [
       {
         program: { id: 2 },
         student: { id: 18 },
-        inscriptionDate: new Date('25/06/2021'),
+        inscriptionDate: new Date('2021-06-25'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -231,7 +231,7 @@ const students: Student[] = [
       {
         program: { id: 2 },
         student: { id: 19 },
-        inscriptionDate: new Date('27/06/2021'),
+        inscriptionDate: new Date('2021-06-27'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -243,7 +243,7 @@ const students: Student[] = [
       {
         program: { id: 3 },
         student: { id: 20 },
-        inscriptionDate: new Date('28/06/2021'),
+        inscriptionDate: new Date('2021-06-28'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -255,7 +255,7 @@ const students: Student[] = [
       {
         program: { id: 3 },
         student: { id: 21 },
-        inscriptionDate: new Date('28/06/2021'),
+        inscriptionDate: new Date('2021-06-28'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -267,7 +267,7 @@ const students: Student[] = [
       {
         program: { id: 3 },
         student: { id: 22 },
-        inscriptionDate: new Date('28/06/2021'),
+        inscriptionDate: new Date('2021-06-28'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -279,7 +279,7 @@ const students: Student[] = [
       {
         program: { id: 3 },
         student: { id: 23 },
-        inscriptionDate: new Date('28/06/2021'),
+        inscriptionDate: new Date('2021-06-28'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -291,7 +291,7 @@ const students: Student[] = [
       {
         program: { id: 3 },
         student: { id: 24 },
-        inscriptionDate: new Date('28/06/2021'),
+        inscriptionDate: new Date('2021-06-28'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,
@@ -303,7 +303,7 @@ const students: Student[] = [
       {
         program: { id: 3 },
         student: { id: 25 },
-        inscriptionDate: new Date('28/06/2021'),
+        inscriptionDate: new Date('2021-06-28'),
       } as ProgramToStudent,
     ] as ProgramToStudent[],
   } as Student,

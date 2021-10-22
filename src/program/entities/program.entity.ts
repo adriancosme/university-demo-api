@@ -1,11 +1,4 @@
-import { Student } from '../../student/entities/student.entity';
-import {
-  Column,
-  Entity,
-  ManyToMany,
-  OneToMany,
-  PrimaryGeneratedColumn,
-} from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { ProgramToStudent } from '../../program-student/entities/program-student.entity';
 
 @Entity('program')
