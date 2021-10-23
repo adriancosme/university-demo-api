@@ -20,7 +20,7 @@ export class UserService {
   }
 
   async getOne(id: number) {
-    return this.userRepository.findOne(id);
+    return await this.userRepository.findOne(id, { relations: ['profile'] });
   }
 
   async getAllUsers() {

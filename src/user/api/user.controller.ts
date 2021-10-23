@@ -33,4 +33,9 @@ export class UserController {
   async deleteUser(@Param() param) {
     return this.userService.delete(param.id);
   }
+
+  @Get(':id')
+  async getProfile(@Param() param) {
+    return this.userService.getOne(param.id);
+  }
 }
