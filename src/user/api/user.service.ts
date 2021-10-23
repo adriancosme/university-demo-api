@@ -12,7 +12,11 @@ export class UserService {
   ) {}
 
   async findOneByUserName(username: string): Promise<User | undefined> {
-    return this.userRepository.findOne({ username: username });
+    return this.userRepository
+      .createQueryBuilder('user')
+      .where({ username })
+      .leftJoinAndSelect('user.profile', 'profile')
+      .getOne();
   }
 
   async getOne(id: number) {
