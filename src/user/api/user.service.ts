@@ -1,7 +1,9 @@
-import { Injectable } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { User } from '../entities/user.entity';
+import { EditUserDto } from '../dto/editUser.dto';
+import { CreateUserDto } from '../dto/createUser.dto';
 
 @Injectable()
 export class UserService {
@@ -22,5 +24,18 @@ export class UserService {
       .createQueryBuilder('user')
       .innerJoinAndSelect('user.profile', 'profile')
       .getMany();
+  }
+
+  async editUser(id: number, userEdit: EditUserDto) {
+    const user = await this.getOne(id);
+    if (!user) {
+      throw new HttpException('User do not exist', HttpStatus.BAD_REQUEST);
+    }
+    const userEdited = Object.assign({}, userEdit);
+    return this.userRepository.save(userEdited);
+  }
+
+  async create(user: CreateUserDto) {
+    return this.userRepository.save(user);
   }
 }

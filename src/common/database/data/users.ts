@@ -7,9 +7,7 @@ const users: User[] = [
     password: 'admin',
     roles: ['ADMIN'],
     profile: {
-      name: 'Juan',
-      lastname: 'Perez',
-      email: 'jperez@mail.com',
+      id: 1,
     } as Profile,
   } as User,
   {
@@ -17,9 +15,7 @@ const users: User[] = [
     password: 'cashier',
     roles: ['CASHIER'],
     profile: {
-      name: 'Javier',
-      lastname: 'Marrufo',
-      email: 'jmarrufo@mail.com',
+      id: 2,
     } as Profile,
   } as User,
 ].map((data) => {

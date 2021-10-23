@@ -10,9 +10,6 @@ export class Profile {
   name: string;
 
   @Column()
-  lastname: string;
-
-  @Column()
   email: string;
 
   @OneToOne(() => User, (user) => user.profile)
