@@ -35,8 +35,8 @@ export class UserService {
     if (!user) {
       throw new HttpException('User do not exist', HttpStatus.BAD_REQUEST);
     }
-    const userEdited = Object.assign({}, userEdit);
-    return this.userRepository.save(userEdited);
+    const editedUser = Object.assign(user, userEdit);
+    return this.userRepository.save(editedUser);
   }
 
   async create(user: CreateUserDto) {
