@@ -1,7 +1,4 @@
-import { hash } from 'bcryptjs';
 import {
-  BeforeInsert,
-  BeforeUpdate,
   Column,
   Entity,
   JoinColumn,
@@ -20,15 +17,6 @@ export class User {
 
   @Column()
   password: string;
-
-  @BeforeInsert()
-  @BeforeUpdate()
-  async hashPassword() {
-    if (!this.password) {
-      return;
-    }
-    this.password = await hash(this.password, 10);
-  }
 
   @OneToOne(() => Profile, (profile) => profile.user, { cascade: true })
   @JoinColumn()

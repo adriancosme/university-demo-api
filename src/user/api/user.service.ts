@@ -4,6 +4,7 @@ import { Repository } from 'typeorm';
 import { User } from '../entities/user.entity';
 import { EditUserDto } from '../dto/editUser.dto';
 import { CreateUserDto } from '../dto/createUser.dto';
+import { hash } from 'bcryptjs';
 
 @Injectable()
 export class UserService {
@@ -35,11 +36,15 @@ export class UserService {
     if (!user) {
       throw new HttpException('User do not exist', HttpStatus.BAD_REQUEST);
     }
+    if (userEdit.password) {
+      userEdit.password = await hash(userEdit.password, 10);
+    }
     const editedUser = Object.assign(user, userEdit);
     return this.userRepository.save(editedUser);
   }
 
   async create(user: CreateUserDto) {
+    user.password = await hash(user.password, 10);
     return this.userRepository.save(user);
   }
 

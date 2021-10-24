@@ -1,10 +1,10 @@
 {
   "type": "mysql",
-  "host": "database-2.c5va6mx9dna4.us-east-2.rds.amazonaws.com",
+  "host": "us-cdbr-east-04.cleardb.com",
   "port": 3306,
-  "username": "admin",
-  "password": "VMggrVSi27xRfh7DgraO",
-  "database": "demo",
+  "username": "b76e5e030cebd1",
+  "password": "870893ea",
+  "database": "heroku_b476c2464324edd",
   "entities": [
     "C:\\Users\\admin\\Projects\\university-test-api\\dist\\**\\**\\*entity{.ts,.js}"
   ],

@@ -7,12 +7,6 @@ import generateTypeormConfigFile from './common/scripts/generate-typeorm-config-
 import { AppModule } from './app.module';
 
 async function bootstrap() {
-  console.log(
-    process.env.DATABASE_HOST,
-    process.env.DATABASE_PORT,
-    process.env.DATABASE_USERNAME,
-    process.env.DATABASE_PASSWORD,
-  );
   const app = await NestFactory.create(AppModule);
   const logger = new Logger('Bootstrap');
   const config = app.get(ConfigService);

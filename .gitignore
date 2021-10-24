@@ -396,4 +396,6 @@ Temporary Items
 # Local
 .env
 *.env
+ormconfig.json
+ormlogs.log
 dist
