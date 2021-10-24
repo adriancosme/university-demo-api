@@ -1,9 +1,9 @@
 {
   "type": "mysql",
-  "host": "database-1.c5va6mx9dna4.us-east-2.rds.amazonaws.com",
+  "host": "database-2.c5va6mx9dna4.us-east-2.rds.amazonaws.com",
   "port": 3306,
   "username": "admin",
-  "password": "kT3Lgp43hAj0WArZXEoU",
+  "password": "VMggrVSi27xRfh7DgraO",
   "database": "demo",
   "entities": [
     "C:\\Users\\admin\\Projects\\university-test-api\\dist\\**\\**\\*entity{.ts,.js}"
